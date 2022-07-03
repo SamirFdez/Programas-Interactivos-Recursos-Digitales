@@ -1,0 +1,17 @@
+table input {
+    width: 96%;
+    height: 30px;
+    text-align: center;
+}
+
+.normal{
+    border: solid 1px black;
+}
+
+.buena{
+    border: solid 2px greenyellow;
+}
+
+.mala{
+    border: solid 2px red;
+}

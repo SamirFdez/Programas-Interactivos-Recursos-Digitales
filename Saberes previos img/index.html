@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saberes Previos</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <script src="js/app.js"></script>
+    <script src="js/Jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />  </head>
+<body>
+
+  <div class="container">
+
+    <div class="row mt-2">
+      <h5><p align="justify" style="line-height: 150%">Con el fin de saber lo que conoce sobre <b>LA SALUD</b>, te animamos a observar la imagen haciendo clic en <b>VER IMAGEN</b> y responder a las siguientes preguntas dentro del recuadro que se presenta en esta actividad. Al final, escribe tu nombre y envía a tu docente.</h5>    
+    </div>
+
+    <div class="text-center mb-2">
+      <button onclick="ver()" class="btn btn-info">VER IMAGEN</button>
+    </div>
+
+    <div class="modal fade" id="modalImagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <img src="img/vidasaludable.jpg" class="img-fluid"> 
+            </center>
+          </div>
+          <div class="modal-footer">
+               <button type="button" onclick="cerrar()" class="btn btn-danger">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <b>1.	¿Qué observas en las imágenes?</b>
+      <textarea rows="3" class="form-control" placeholder="Escribe tu respuesta aqu&iacute;"></textarea>
+
+      <b class="mt-2">2.	¿Cuáles de los alimentos de la imagen consumen en casa?</b>
+      <textarea rows="3" class="form-control" placeholder="Escribe tu respuesta aqu&iacute;"></textarea>
+
+      <b class="mt-2">3.	¿Cuántas veces has recibido asistencia médica por alguna enfermedad?</b>
+      <textarea rows="3" class="form-control" placeholder="Escribe tu respuesta aqu&iacute;"></textarea>
+
+      <b class="mt-2">4.	¿Conoces alguna enfermedad que se transmita de persona a persona?</b>
+      <textarea rows="5" class="form-control" placeholder="Escribe tu respuesta aqu&iacute;"></textarea>
+
+      <b class="mt-2">5.	¿Cuáles acciones toman en casa para prevenir enfermedades?</b>
+      <textarea rows="3" class="form-control" placeholder="Escribe tu respuesta aqu&iacute;"></textarea>
+    </div>
+
+    <div class="text-center mt-3">
+      <input class="form-control" type="text" placeholder="Escribe tu nombre completo aqu&iacute;">
+      <button type="button" class="btn btn-primary mt-2" onclick="imprimir()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar / <i class="fa fa-print" aria-hidden="true"></i> Imprimir</button>
+    </div>
+
+  </div> 
+</body>
+</html>

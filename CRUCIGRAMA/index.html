@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crucigrama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Crucigrama - Edward<br>
+        <center>
+            <button type="button" class="btnayuda" id="ayuda" >Ayuda</button>
+            <button type="button" class="btnplayagain" id="volverJugar" >Volver a jugar</button>
+            <button type="button" class="btnimprimir" id="imprimir">Imprimir</button>
+        </center>
+    </h1>
+
+    <main>
+        <ins data-clue=1></ins>
+        <del></del>
+        <ins data-clue=2></ins>
+        <del></del>
+        <del></del>
+        <ins data-clue=3></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <del></del>
+
+        <ins></ins>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <ins data-clue=4></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+
+        <ins></ins>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <ins data-clue=5></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins data-clue=6></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <ins></ins>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <ins data-clue=7></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <del></del>
+        <ins data-clue=8></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <del></del>
+        <del></del>
+        <del></del>
+        <del></del>
+
+        <ins data-clue=9></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+        <del></del>
+    </main>
+    <ul>
+        <li class="heading">Horizontal</li>
+        <li data-clue=3 data-dir="across" data-length=6>3. Porción de materia viva, que constituye la unidad básica de estructura y función de los organismos, formada por núcleo, citoplasma y membrana.</li>
+        <li data-clue=4 data-dir="across" data-length=8>4. Totalidad de organismos vivos que pueblan la Tierra formando el último nivel de organización.</li>
+        <li data-clue=5 data-dir="across" data-length=8>5. Unión de un numero definido de átomos iguales o diferentes que conservan sus propiedades químicas.</li>
+        <li data-clue=7 data-dir="across" data-length=6>7. Conjunto de células capaces de realizar una función.</li>
+        <li data-clue=8 data-dir="across" data-length=7>8. Segundo nivel de organización de la materia.</li>
+        <li data-clue=9 data-dir="across" data-length=11>9. Componentes químicos orgánicos que forman parte de las estructuras y las funciones celulares.</li>
+    </ul>
+    <ul>
+        <li class="heading">Vertical</li>
+        <li data-clue=1 data-dir="down" data-length=5>1. Unidad estructural de la materia.</li>
+        <li data-clue=2 data-dir="down" data-length=9>2. Conjunto de individuos de la misma especie.</li>
+        <li data-clue=6 data-dir="down" data-length=9>6. Que no manifiestan la vida.</li>
+    </ul>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

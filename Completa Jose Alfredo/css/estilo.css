@@ -1,0 +1,24 @@
+textarea { font-size: 20px !important ;  }
+
+
+.inputInLabel{
+    width: 8.7em  !important;
+    display: initial !important;
+    margin-bottom: 6px;
+}
+
+#options li{
+  padding: .40rem .40rem; 
+  margin: 10px;
+  border: 2px solid;
+  height: 35px;
+  cursor: pointer; 
+}
+
+#rectparalela{
+  width: 10em  !important;
+}
+
+#rectperpe{
+  width: 13.2em  !important;
+}

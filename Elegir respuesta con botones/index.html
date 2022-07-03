@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 9</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <script src="js/app.js"></script>
+    <script src="js/Jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+  </head>
+<body>
+
+  <div class="container">
+
+    <div class="row mt-3">
+      <div class="col-md-6" style="text-align: justify;">
+        <label>
+          <b>1.</b> The bus leaves at 3.00 pm
+          <button type="button" class="btn btn-secondary btn-sm" id="correct" onclick="correct();" style="margin-left: 10px;">tomorrow</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="incorrect" onclick="incorrect();">last week</button>
+        </label>
+        <label>
+          <b>2.</b> I have classes
+          <button type="button" class="btn btn-secondary btn-sm" id="incorrect2" onclick="incorrect2();" style="margin-left: 10px;">yesterday</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="correct2" onclick="correct2();">tonight</button>
+        </label>
+        <label>
+          <b>3.</b> My father’s birthday is on
+          <button type="button" class="btn btn-secondary btn-sm" id="correct3" onclick="correct3();" style="margin-left: 10px;">Tuesday</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="incorrect3" onclick="incorrect3();">daily</button>
+        </label>
+        <label>
+          <b>4.</b> I take my vacations
+          <button type="button" class="btn btn-secondary btn-sm" id="correct4" onclick="correct4();" style="margin-left: 10px;">next moth</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="incorrect4" onclick="incorrect4();">last year</button>
+        </label>
+        <label>
+          <b>5.</b> She visit her mother 
+          <button type="button" class="btn btn-secondary btn-sm" id="incorrect5" onclick="incorrect5();" style="margin-left: 10px;">last Saturday</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="correct5" onclick="correct5();">next Saturday</button>
+        </label>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <input class="form-control" type="text" placeholder="Write your full name here">
+        <button type="button" class="btn btn-primary btn-lg mt-2 mb-2" onclick="imprimir()"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
+    </div>
+  </div> 
+</body>
+</html>

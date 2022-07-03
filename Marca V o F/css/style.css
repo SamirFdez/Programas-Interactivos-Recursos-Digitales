@@ -1,0 +1,31 @@
+b{
+    text-align: justify;
+}
+
+label{
+    text-align: left;
+}
+
+.row input{
+    width: 30px; 
+    font-size: 18px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.normal {
+    border: 2px solid black; 
+    font-weight: bold;
+}
+
+.buena {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.mala {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}

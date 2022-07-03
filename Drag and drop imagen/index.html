@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actividad 3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <script src="js/app.js"></script>
+    <script src="js/Jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />  </head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+<body>
+
+  <div class="container">
+    <div class="row mt-1" style="text-align: justify; line-height: 150%;">
+      <h5>En la siguiente imagen arrastra los nombres de las capas de la tierra a donde corresponde. Luego escribe tu nombre completo y envía a tu docente.</h5>
+    </div>
+
+    <div class="row mt-2">
+      <div style="margin-left: 8px;">
+        <span draggable="true" ondragstart="drag(event)" id="drag1">Atmósfera</span>
+      </div>
+      <div style="margin-left: 8px;">
+        <span draggable="true" ondragstart="drag(event)" id="drag2">N. interno</span>
+      </div>
+      <div style="margin-left: 8px;">
+        <span draggable="true" ondragstart="drag(event)" id="drag3">N. externo</span>
+      </div>
+      <div style="margin-left: 8px;">
+        <span draggable="true" ondragstart="drag(event)" id="drag4">Corteza</span>
+      </div>
+      <div style="margin-left: 8px;">
+        <span draggable="true" ondragstart="drag(event)" id="drag5">Manto</span>
+      </div>
+    </div>
+
+    <div class="row div mt-4">
+      <div class="col-md-6">
+        <img src="img/capas de la tierra.png" alt="La atmosfera" width="520">
+        <div id="div1" ondrop="drop(event)" data-draggable-id="drag4" ondragover="allowDrop(event)"></div>
+
+        <div id="div2" ondrop="drop(event)" data-draggable-id="drag5" ondragover="allowDrop(event)"></div>
+
+        <div id="div3" ondrop="drop(event)" data-draggable-id="drag3" ondragover="allowDrop(event)"></div>
+
+        <div id="div4" ondrop="drop(event)" data-draggable-id="drag2" ondragover="allowDrop(event)"></div>
+
+        <div id="div5" ondrop="drop(event)" data-draggable-id="drag1" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+    
+    <div class="text-center" style="margin-top: 370px;">
+      <button type="button" class="btn btn-success" onclick="validar();"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Validar respuestas</button>
+      <input class="form-control mt-2" type="text" placeholder="Escribe tu nombre completo aqu&iacute;">
+      <button type="button" class="btn btn-primary mt-2" onclick="imprimir()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar / <i class="fa fa-print" aria-hidden="true"></i> Imprimir</button>
+    </div>
+
+  </div> 
+
+  <!-- Audios --> 
+<audio id="sndbien" >
+  <source src="snd/bien.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sndmal" >
+  <source src="snd/mal.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

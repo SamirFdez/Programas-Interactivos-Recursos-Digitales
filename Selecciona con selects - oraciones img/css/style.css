@@ -1,0 +1,28 @@
+b {
+    margin-right: 10px;
+}
+
+label {
+    text-align: justify;
+}
+
+select {
+    width: 150px;
+    height: 27px;
+}
+
+.normal{
+    background-color: white;
+}
+
+.buena{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+.mala{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}

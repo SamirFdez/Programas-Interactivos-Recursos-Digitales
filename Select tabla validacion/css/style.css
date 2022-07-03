@@ -1,0 +1,16 @@
+table select {
+    width: 96%;
+    height: 26px;
+}
+
+.normal{
+    background-color: white;
+}
+
+.buena{
+    background-color: greenyellow;
+}
+
+.mala{
+    background-color: red;
+}

@@ -1,0 +1,49 @@
+img {
+    position: absolute;
+}
+
+.row #div1, #div2, #div3, #div4, #div5{
+    width: 102px;
+    height: 37px;
+    border: 1px dashed black;
+    margin: 5px;
+    background-color: skyblue;
+    position: absolute;
+  }
+
+  #div1 {
+    top: 35px;
+    left: 94px;;
+  }
+
+  #div2 {
+    top: 110px;
+    left: 70px;;
+  }
+
+  #div3 {
+    top: 186px;
+    left: 118px;;
+  }
+
+  #div4 {
+    top: 238px;
+    left: 133px;;
+  }
+
+  #div5 {
+    top: 280px;
+    left: 160px;;
+  }
+
+span {
+    width: 100px;
+    text-align: center;
+    font-size: 17px;
+    background-color: skyblue;
+    cursor: pointer;
+    padding: 5px;
+    float: left;
+    font-weight: bold;
+  }
+

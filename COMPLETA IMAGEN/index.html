@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actividad 2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <script src="js/app.js"></script>
+    <script src="js/Jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />  </head>
+  </head>
+<body>
+
+  <div class="container">
+    <div class="row mt-1">
+      <h5>Completa la siguiente imagen con las palabras dadas:</h5><br>
+    </div>
+    <div class="row">
+      <h6>Cráter - Lava - Cono volcánico - Chimenea - Ceniza - Magma</h6>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-md-6" style="margin-left: 0px;">
+        <img src="img/Volcan.png" alt="Volcan" width="550">
+        <input type="text" class="normal" id="text1" placeholder="escribe aqu&iacute;">
+        <input type="text" class="normal" id="text2" placeholder="escribe aqu&iacute;">
+        <input type="text" class="normal" id="text3" placeholder="escribe aqu&iacute;">
+        <input type="text" class="normal" id="text4" placeholder="escribe aqu&iacute;">
+        <input type="text" class="normal" id="text5" placeholder="escribe aqu&iacute;"> 
+        <input type="text" class="normal" id="text6" placeholder="escribe aqu&iacute;">
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:260px;">
+      <button type="button" class="btn btn-success mt-4" onclick="validarRespuestas(); validarRespuestas2(); validarRespuestas3(); validarRespuestas4(); validarRespuestas5(); validarRespuestas6();"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Validar respuestas</button>
+      <input class="form-control mt-2" type="text" placeholder="Escribe tu nombre completo aqu&iacute;">
+      <button type="button" class="btn btn-primary mt-2" onclick="imprimir()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar / <i class="fa fa-print" aria-hidden="true"></i> Imprimir</button>
+    </div>
+
+  </div> 
+</body>
+</html>

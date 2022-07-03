@@ -1,0 +1,17 @@
+table input {
+    width: 50%;
+    height: 25px;
+}
+
+.normal{
+    background-color: white;
+}
+
+.buena{
+    background-color: green;
+
+}
+
+.mala{
+    background-color: red;
+}

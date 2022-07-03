@@ -1,0 +1,58 @@
+img {
+    position: absolute;
+}
+
+.row input {
+    position: absolute;
+    width: 127.5px;
+    height: 38px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.normal{
+    border: solid 2px transparent;
+}
+
+.buena{
+    border: transparent;
+    color: green;
+    font-weight: bold;
+}
+
+.mala{
+    border: transparent;
+    color:red;
+    font-weight: bold;
+}
+
+#text1{
+    left: 57px;
+    top: 51px;
+}
+
+#text2{
+    left: 398px;
+    top: 68.3px;
+}
+
+#text3{
+    left: 59px;
+    top: 133px;
+}
+
+#text4{
+    left: 408.5px;
+    top: 127px;
+}
+
+#text5{
+    left: 19px;
+    top: 212px;
+}
+
+#text6{
+    left: 432px;
+    top: 222px;
+}
+

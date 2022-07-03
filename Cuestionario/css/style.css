@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#name {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box{
+    max-width: 680px;
+    background-color: wheat;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+.home-box h3 {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.home-box p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.home-box .btn {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 15px 45px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answers-indicator{
+    width: 100%;
+    float: left;
+}
+
+.quiz-box .question-number {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.quiz-box .question-text {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    padding: 20px 0;
+    line-height: 28px;
+    margin:0;
+    text-align: justify;
+}
+
+.quiz-box .option-container .option {
+    background-color: white;
+    color: black;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.quiz-box .option-container .option.correct{
+    color: white;
+}
+
+.quiz-box .option-container .option.incorrect{
+    color: white;
+}
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+
+.quiz-box .option-container .option.incorrect::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red ;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+.quiz-box .btn {
+    margin: 15px 0;
+}
+
+.quiz-box .answers-indicator {
+    border-top: 1px solid white;
+
+}
+
+.quiz-box .answers-indicator div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.quiz-box .answers-indicator div.correct{
+    background-color: green;
+    background-image: url("../img/correcta.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-box .answers-indicator div.incorrect{
+    background-color: red;
+    background-image: url("../img/incorrecta.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-box  {
+    text-align: center;
+}
+
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1 {
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.result-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.result-box table td{
+    border: 1px solid white;
+    padding: 8px 15px;
+    font-weight: 500;
+    width: 65%;
+    color: black;
+    font-size: 18px;
+}
+
+.result-box .btn {
+    margin-right: 20px;
+    
+}
