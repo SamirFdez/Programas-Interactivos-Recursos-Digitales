@@ -1,6 +1,6 @@
 =====================================================
 
-## Programas interactivos destinados para la educación.
+# Programas interactivos destinados para la educación.
 
 Programas educativos interactivos hechos para la página 
 educativa: recursosdigitalesrde.org
